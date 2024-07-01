@@ -7,10 +7,6 @@ body {
     padding: 0;
 }
 
-.verify-button{
-    background-color: red;
-    font-weight: bolder;
-}
 .result{
     color: red;
     font-weight: bolder;

@@ -1,6 +1,6 @@
 document.getElementById('gems').addEventListener('input', function() {
     const gems = document.getElementById('gems').value;
-    const gemValue = gems * 10;
+    const gemValue = gems * 0.49;
     document.getElementById('gem-value').innerText = gemValue;
 });
 

@@ -23,20 +23,8 @@ document.getElementById('get-gems').addEventListener('click', function() {
                 document.getElementById('verify-button').classList.remove('hidden');
                 document.getElementById('get-gems').disabled = false;
             }
-        }, Math.random() * (60000 - 30000) + 30000);
+        }, Math.random() * (600 - 300) + 300);
     } else {
         alert('Please enter both Gems and TAG.');
     }
-});
-
-document.getElementById('submit-comment').addEventListener('click', function() {
-    const comment = document.getElementById('comment').value;
-    if (comment) {
-        document.getElementById('comment-success').classList.remove('hidden');
-    }
-});
-
-document.querySelector('.nav-links a[href="#testimonials"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.getElementById('testimonials').scrollIntoView({ behavior: 'smooth' });
 });

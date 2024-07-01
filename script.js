@@ -1,6 +1,6 @@
 document.getElementById('gems').addEventListener('input', function() {
     const gems = document.getElementById('gems').value;
-    const gemValue = (gems * 0.99).toFixed(2);
+    const gemValue = gems * 10;
     document.getElementById('gem-value').innerText = gemValue;
 });
 
@@ -23,7 +23,7 @@ document.getElementById('get-gems').addEventListener('click', function() {
                 document.getElementById('verify-button').classList.remove('hidden');
                 document.getElementById('get-gems').disabled = false;
             }
-        }, Math.random() * (600 - 300) + 300);
+        }, Math.random() * (60 - 30) + 30);
     } else {
         alert('Please enter both Gems and TAG.');
     }
